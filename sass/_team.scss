@@ -1,0 +1,54 @@
+
+.team__item {
+    width: 270px;
+    background-color:var(--white);
+    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.team__item:not(:last-child) {
+    margin-right: 30px;
+}
+.team__item:first-child {
+    margin-left: 0;
+}
+
+
+.team {
+    background-color:var(--secondary-bcg-color);
+}
+
+.team__title {
+    margin-bottom: 50px;
+    margin-top: 0;
+
+}
+
+
+.team__name {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+text-align: center;
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.team__job {
+    color: var(--primary-text-color);
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+text-align: center;
+margin-bottom: 16px;
+margin-top: 0;
+}
+
+.team__paragraph {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

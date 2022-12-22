@@ -1,0 +1,35 @@
+
+.work__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.work__picture-box {
+    position: relative;
+}
+
+.work__text-part {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__pic-text {
+
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 27px;
+margin-bottom: 27px;
+
+color: #FFFFFF;
+}
+
+.work__img {
+    display: block;
+}
