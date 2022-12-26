@@ -1,7 +1,7 @@
 /* HEADER */ 
 .header {
     background-color: var(--white);
-
+    position: relative;
 }
 
 .header.portfolio, .header.contacts {
@@ -168,7 +168,12 @@ letter-spacing: 0.02em;
     color: var(--accent-color);
 }
 
-.header__contact-item .mail {
+.header__contact-item.mail {
     margin-right: 40px;
+}
+
+.header__nav-contact{
+    display: flex;
+    justify-content: center;
 }
 

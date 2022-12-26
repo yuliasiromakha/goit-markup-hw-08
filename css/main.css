@@ -47,14 +47,10 @@ body {
 }
 
 section {
+  width: 100%;
   margin: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.flex-container > ul {
-  display: flex;
-  flex-direction: row;
 }
 
 .main-section {
@@ -86,6 +82,7 @@ textarea {
 /* HEADER */
 .header {
   background-color: var(--white);
+  position: relative;
 }
 
 .header.portfolio, .header.contacts {
@@ -231,8 +228,13 @@ ul {
   color: var(--accent-color);
 }
 
-.header__contact-item .mail {
+.header__contact-item.mail {
   margin-right: 40px;
+}
+
+.header__nav-contact {
+  display: flex;
+  justify-content: center;
 }
 
 /* HERO */
@@ -245,6 +247,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimg.jpg);
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -253,12 +256,18 @@ ul {
   margin-right: auto;
   margin-top: 0;
   color: var(--white);
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+  }
 }
 
 .hero-button {
@@ -287,8 +296,6 @@ ul {
 .features__list {
   display: flex;
   flex-direction: row;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 0;
   align-items: baseline;
 }
@@ -368,6 +375,17 @@ ul {
 
 .work__img {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}
+
+.flex-container > ul {
+  display: flex;
+  flex-direction: row;
 }
 
 .team__item {
@@ -671,6 +689,41 @@ ul {
   color: #F5F4FA;
 }
 
+@media screen and (min-width: 481px) {
+  .menu-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-icon.is-open.cross {
+    display: block;
+  }
+  .menu-icon.is-open.menu {
+    display: none;
+  }
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: aqua;
+  height: 480px;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+.menu-containeris-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .features__list {
+    display: block;
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 30рх);
+  }
+}
 .portfolio-button {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bcg-color);
