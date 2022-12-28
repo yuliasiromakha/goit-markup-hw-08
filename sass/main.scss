@@ -11,7 +11,7 @@
 @import './components/text-area';
 @import './components/titles';
 
-@import './page-header';
+@import './header';
 @import './hero';
 @import './features';
 @import './work';
@@ -19,7 +19,6 @@
 @import './team-socials';
 @import './clients';
 @import './footer';
-@import './mobile-menu.scss';
 
 
 @import './portfolio-buttons';
@@ -28,4 +27,9 @@
 
 @import './modal';
 
-
+@import './mobile.scss/menu-mobile';
+@import './mobile.scss/features-mobile';
+@import './mobile.scss/team-mobile';
+@import './mobile.scss/clients-mobile';
+@import './mobile.scss/_footer-mobile.scss';
+@import './mobile.scss/hero-mobile';

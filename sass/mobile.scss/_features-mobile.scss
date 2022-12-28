@@ -4,3 +4,55 @@
     
 //   }
 // }
+
+
+
+@media screen and (max-width: 480px) {
+    
+    // .hero {
+    //     background-color: #2F303A;
+    //     height: 400px;
+    //     text-align: center;
+        
+    //     background-repeat: no-repeat;
+    //     background-size: cover ;
+    //     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/header-mobile.jpg);
+    //     // max-width: 1600px;
+    //     }
+}
+
+// ----------------------------- FEATURES
+
+@media screen and (max-width: 767px) {
+
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% - 1 * 30рх / 1)
+    }
+
+    .features__item {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 450px;
+        margin-right: 0;
+
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 60px;
+        }
+    
+    }
+
+    .features__title {
+        text-align: center;
+    }
+
+    
+}
+
+

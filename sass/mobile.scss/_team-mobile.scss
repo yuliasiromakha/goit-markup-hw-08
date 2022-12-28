@@ -1,0 +1,24 @@
+@media screen and (max-width: 480px) {
+
+    // @media (min-resolution: 2dppx) {
+       
+    // }
+
+    .team__title {
+        margin-bottom: 30px;
+    }
+
+    .team__list {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .team__item {
+        width: 450px;
+        height: 622px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
