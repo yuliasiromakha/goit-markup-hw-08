@@ -1,11 +1,15 @@
 /* HEADER */ 
-.header {
-    background-color: var(--white);
-    position: absolute;
-}
 
 .header.portfolio, .header.contacts {
     border-bottom: 1px solid var(--border);
+}
+
+.header {
+    height: 80px;
+
+    @media (max-width: 767px) {
+        height: 60px;
+    }
 }
 
 
@@ -21,6 +25,7 @@
 .navigation {
     display: flex;
     align-items: center;
+    // width: 100%;
 }
 
 .header__nav-contact .header__upper-link {

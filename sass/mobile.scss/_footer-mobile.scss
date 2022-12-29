@@ -5,14 +5,53 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-
-    }
-
-    .footer__location {
-        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer {
         height: 604px;
     }
+
+    .container.one {
+        flex-direction: column;
+    }
+
+    .footer__lower-logo {
+        margin-bottom: 0;
+    }
+
+    .contact-li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .contact-li:last-child {
+        margin-bottom: 60px;
+    }
+
+    .footer__join-area {
+        align-items: center;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscription__block {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+    .subscription__button {
+        margin-top: 20px;
+    }
+
 }
+
+
+
+    // .subscription__form {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     align-items: center;
+    //     justify-content: center;
+    // }

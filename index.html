@@ -22,8 +22,17 @@
         <nav class="navigation">
 
             <a href="./index.html" class="header__logo"> <span class="web">Web</span>Studio </a> 
-         
 
+            <button type="button" class="menu__button js-open-menu" aria-controls="menu-container">
+
+                <svg width="40" height="40" class="menu__button-icon" aria-label="Перемикач мобільного меню" aria-expanded="false">
+                    <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
+                </svg>
+    
+            </button>
+
+        <div class="desktop-navigation">
+         
             <ul class="header__site-nav"> 
                 <li > <a class="link current line" href="./index.html"> Студія </a> </li> 
                 <li > <a class="link line" href="./portfolio.html"> Портфоліо </a> </li> 
@@ -52,61 +61,60 @@
 
               </ul>    
 
+            </div>
+
               <!-- ------------------ MOBILE MENU ------------------ -->
               
-              <div class="menu__container" id="menu-container" > 
+              <div class="js-menu-container" id="menu-container" > 
 
                 <div class="menu-content"> 
+
                     <nav>
 
-                <button type="button" class="menu__button is-open" aria-controls="menu-container">
-                    
-                    <svg width="40" height="40" class="menu__button-icon" aria-label="Перемикач мобільного меню" aria-expanded="false"> 
-                        <use href="./images/icons.svg#icon-cross" class="icon-cross"></use>
-                        <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
-                    </svg>
-        
-                </button>
-            
-                <ul class="mob-header__site-nav"> 
-                    <li class="site-nav__item"> <a class="mob-link current " href="./index.html"> Студія </a> </li> 
-                    <li class="site-nav__item"> <a class="mob-link" href="./portfolio.html"> Портфоліо </a> </li> 
-                    <li class="site-nav__item"> <a class="mob-link" href="./contacts.html"> Контакти </a> </li> 
-                </ul> 
+                        <button type="button" class="menu__button js-close-menu" aria-controls="menu-container">
 
-                 </nav>
-
-                 <div class="menu-lower-content">
-        
-                <ul class="mob-header__nav-contact"> 
-
-                    <li class="mob-header__contact-item"> 
-                        <a class="mob-header__upper-link phone" href="tel:+380961111111"> +38 096 111 11 11 </a> 
-                    </li> 
-
-                     <li class="mob-header__contact-item mail">  
-                        <a class="mob-header__upper-link mail" href="mailto:info@studio.com">info@devstudio.com</a> 
-                    </li>
-    
-                  </ul>  
-
+                            <svg width="40" height="40" class="menu__button-icon" aria-label="Перемикач мобільного меню" aria-expanded="false"> 
+                                <use href="./images/icons.svg#icon-cross" class="icon-cross"></use>
+                            </svg>
                 
+                        </button>
+            
+                        <ul class="mob-header__site-nav"> 
+                            <li class="site-nav__item"> <a class="mob-link current " href="./index.html"> Студія </a> </li> 
+                            <li class="site-nav__item"> <a class="mob-link" href="./portfolio.html"> Портфоліо </a> </li> 
+                            <li class="site-nav__item"> <a class="mob-link" href="./contacts.html"> Контакти </a> </li> 
+                        </ul> 
 
+                    </nav>
 
-                <ul class="mob__socials-list"> 
-                    <li class="mob__socials-item"><a href="" class="mob-social">Instagram</a></li>
-                    <li class="mob__socials-item"><a href="" class="mob-social">Twitter</a></li>
-                    <li class="mob__socials-item"><a href="" class="mob-social">Facebook</a></li>
-                    <li class="mob__socials-item"><a href="" class="mob-social">LinkedIn</a></li>
-                </ul>
+                    <div class="menu-lower-content">
+        
+                        <ul class="mob-header__nav-contact"> 
+
+                            <li class="mob-header__contact-item"> 
+                                <a class="mob-header__upper-link phone" href="tel:+380961111111"> +38 096 111 11 11 </a> 
+                            </li> 
+
+                             <li class="mob-header__contact-item mail">  
+                                <a class="mob-header__upper-link mail" href="mailto:info@studio.com">info@devstudio.com</a> 
+                            </li>
+                        </ul>  
+
+                        <ul class="mob__socials-list"> 
+                            <li class="mob__socials-item"><a href="" class="mob-social">Instagram</a></li>
+                            <li class="mob__socials-item"><a href="" class="mob-social">Twitter</a></li>
+                            <li class="mob__socials-item"><a href="" class="mob-social">Facebook</a></li>
+                            <li class="mob__socials-item"><a href="" class="mob-social">LinkedIn</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>   
 
             </div>
-
-            </div>
-
-             </div>
 
         </nav>
+
     </div>    
 
 
@@ -119,8 +127,8 @@
  <!-- Герой -->
  <section class="hero"> 
  <div class="container"> 
-    <h1 class="hero-title"> ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ </h1>
-    <button data-modal-open type="button" class="hero-button"> Замовити послугу </button>
+    <h1 class="hero__title"> ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ </h1>
+    <button data-modal-open type="button" class="hero__button"> Замовити послугу </button>
 
  </div>
 
@@ -483,7 +491,6 @@
           </div>
     </div>
 </section> 
-</main>
 
 <section class="clients"> 
     <div class="container clients"> 
@@ -543,6 +550,10 @@
 
 </section>
 
+</main>
+
+
+
   <!-- Футер -->
   <footer class="footer"> 
 
@@ -601,7 +612,6 @@
     </div>
     <div class="subscription__block"> 
         <form class="subscription__form">
-            <!-- CHANGE TO CLASS FROM SCRIPT -->
     
             <label for="subscribe" class="subscription__label">Підпишіться на розсилку</label>
 
@@ -631,7 +641,3 @@
     </body>
 
 </html>
-
-
-
-

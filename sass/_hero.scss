@@ -1,7 +1,7 @@
 /* HERO */
 .hero {
     background-color: #2F303A;
-    height: 600px;
+    height: auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -14,30 +14,28 @@
        url('../images/bgimg.jpg');
     max-width: 1600px;
 
+    @media (max-width: 480px) {
+        
+        height: 400px;
+        padding: 0;
+        background-image: url('../images/header-img-mobile.jpg');
+        background-size: contain;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 1119px) {
+        background-image: url('../images/header-img-tablet.jpg');
+        background-size: contain;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('../images/bgimg.jpg');
+    
+    }
+
 }
 
 
-
-// @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: url('../images/bgimg@2x.jpg');
-//     }
-// }
-
-// @media (min-device-pixel-ratio: 3),
-//     (min-resolution: 288dpi),
-//     (min-resolution: 3dppx) {
-//     .hero {
-//       background-image: url('../images/bgimg@3x.jpg');
-//     }
-// }
-
-
-
-
-.hero-title {
+.hero__title {
     
     width: 696px;
     margin-left: auto;
@@ -59,7 +57,7 @@
     }
 }
 
-.hero-button {
+.hero__button {
     
     color:var(--white);
     background-color:var(--accent-color);
