@@ -1,0 +1,33 @@
+@media (min-width: 480px) {
+    .modal {
+        width: 450px;
+        padding: 40px;
+    }
+
+    .leave-form {
+        width: 370px;
+        margin-top: 0;
+    }
+
+    .modal-form {
+        width: 370px;
+    }
+
+    .form-field input{
+        width: 370px;
+    }
+
+    .agreement, .conditions-span {
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-align: left;
+
+    }
+
+    .submit-button {
+        margin-top: 31px;
+    }
+}

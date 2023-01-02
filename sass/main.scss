@@ -10,6 +10,7 @@
 @import './components/prt-btn';
 @import './components/text-area';
 @import './components/titles';
+@import './components/mixin';
 
 @import './header';
 @import './hero';
@@ -33,3 +34,10 @@
 @import './mobile.scss/clients-mobile';
 @import './mobile.scss/_footer-mobile.scss';
 @import './mobile.scss/hero-mobile';
+@import './mobile.scss/modal-mobile';
+
+@import './tablet.scss/header-tablet';
+@import './tablet.scss/hero-tablet';
+@import './tablet.scss/clients-tablet';
+@import './tablet.scss/footer-tablet';
+@import './tablet.scss/features-tablet';

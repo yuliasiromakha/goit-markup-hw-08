@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1119px){
 
     // @media (min-resolution: 2dppx) {
        
@@ -19,6 +19,9 @@
 
         &:not(:last-child) {
             margin-bottom: 30px;
+            margin-right: 0;
         }
     }
+
+
 }

@@ -13,26 +13,77 @@
      rgba(47, 48, 58, 0.4)),
        url('../images/bgimg.jpg');
     max-width: 1600px;
+    height: 600px;
 
-    @media (max-width: 480px) {
-        
-        height: 400px;
-        padding: 0;
-        background-image: url('../images/header-img-mobile.jpg');
-        background-size: contain;
+
+    @media screen and (max-width: 480px) {
+       background-image: 
+       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url('../images/header-img-mobile.jpg');
+       height: 400px;
+       padding: 0;
+       background-size: contain;
+       @include retina {
+        background-image: 
+       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url('../images/header-img-mobile2x.jpg');
+       height: 400px;
+       padding: 0;
+       background-size: contain;
+       }
     }
 
-    @media screen and (min-width: 481px) and (max-width: 1119px) {
-        background-image: url('../images/header-img-tablet.jpg');
-        background-size: contain;
+      @media screen and (min-width: 767px) and (max-width: 1119px) {
+        background-image: 
+       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url('../images/header-img-tablet.jpg');
+       height: 400px;
+       padding: 0;
+       background-size: contain;
+       @include retina {
+        background-image: 
+       linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url('../images/header-img-tablet2x.jpg');
+       height: 400px;
+       padding: 0;
+       background-size: contain;
+       }
     }
 
     @media screen and (min-width: 1200px) {
-        background-image: url('../images/bgimg.jpg');
+        background-image: 
+        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bgimg.jpg');
+        height: 600px;
+        @include retina {
+         background-image: 
+        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/bgimg-wide@2x.jpg');
+        }
     
     }
 
-}
+    } 
+    
+
+    // @media (max-width: 480px) {
+        
+    //     height: 400px;
+    //     padding: 0;
+    //     background-image: url('../images/header-img-mobile.jpg');
+    //     background-size: contain;
+    // }
+
+    // @media screen and (min-width: 481px) and (max-width: 1119px) {
+    //     background-image: url('../images/header-img-tablet.jpg');
+    //     background-size: contain;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     background-image: url('../images/bgimg.jpg');
+    
+    // }
+
 
 
 .hero__title {

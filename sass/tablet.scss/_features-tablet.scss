@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+
+    // .features {
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }
+
+     .features__list {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-basis: calc(100% - 4 * 15рх / 2);
+        // flex-basis: calc(100% - 1 * 30рх / 1);
+    }
+
+    .features__item {
+        width: calc(100% - 4 * 15рх / 2);
+
+
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+
+}
