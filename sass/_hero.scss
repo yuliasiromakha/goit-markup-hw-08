@@ -22,31 +22,31 @@
        url('../images/header-img-mobile.jpg');
        height: 400px;
        padding: 0;
-       background-size: contain;
+       background-size: cover;
        @include retina {
         background-image: 
        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url('../images/header-img-mobile2x.jpg');
        height: 400px;
        padding: 0;
-       background-size: contain;
+       background-size: cover;
        }
     }
 
-      @media screen and (min-width: 767px) and (max-width: 1119px) {
+      @media screen and (min-width: 767px) and (max-width: 1199px) {
         background-image: 
        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url('../images/header-img-tablet.jpg');
        height: 400px;
        padding: 0;
-       background-size: contain;
+       background-size: cover;
        @include retina {
         background-image: 
        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url('../images/header-img-tablet2x.jpg');
        height: 400px;
        padding: 0;
-       background-size: contain;
+       background-size: cover;
        }
     }
 
