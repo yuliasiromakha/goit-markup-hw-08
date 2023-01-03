@@ -1,16 +1,47 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px) and (max-width: 1119px) {
 
     .header {
         width: 768px;
         height: 80px;
     }
 
-    .header__nav-contact {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
     .header__contact-item:first-child {
         margin-right: 0;
     }
+
+    .header__logo {
+        margin-right: 88px;
+    }
+
+    .header__nav-contact {
+        margin-left: 70px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .desktop-navigation  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+    }
+
+    // .navigation {
+    //     display: flex;
+    //     align-items: baseline;
+    //     justify-content: center;
+    // }
+
+    .header__contact-item .mail {
+        margin-right: 0;
+    }
+
+    .header__contact-item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    }
+
 }

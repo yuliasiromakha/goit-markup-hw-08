@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (min-width: 480px) {
 
     @media (min-resolution: 2dppx) {
         .hero {
@@ -7,13 +7,46 @@
         }
     }
 
+
+    // .hero__title {
+    //     width: 360px;
+    //     padding-top: 118px;
+    //     font-size: 26px;
+    //     font-weight: 900;
+    //     line-height: 42px;
+    //     letter-spacing: 0.06em;
+    //     text-align: center;
+
+    // }
+
+    // .hero {
+    //     padding-top: 0;
+    //     padding-bottom: 0;
+    //     height: 400px;
+    // }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .hero__title {
         width: 360px;
         padding-top: 118px;
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 42px;
+        letter-spacing: 0.06em;
+        text-align: center;
+
+    }
+
+    .hero {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 400px;
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1119px) {
+// @media screen and (min-width: 481px) and (max-width: 1119px) {
+@media screen and (min-width: 768px)  {
 
     @media (min-resolution: 2dppx) {
         .hero {

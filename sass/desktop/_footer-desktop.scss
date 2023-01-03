@@ -1,0 +1,25 @@
+@media screen and (min-width: 1200px) {
+    .footer {
+        height: 251px;
+    }
+
+    .tablet-logo-join-block {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    // .footer__logo-container {
+    //     margin-right: 70px;
+    // }
+
+    .container.one {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__text {
+        margin-top: 15px;
+    }
+}

@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .footer__logo-container {
         width: 232px;
         display: flex;
@@ -71,6 +71,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .tablet-logo-join-block {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
 
 }
 

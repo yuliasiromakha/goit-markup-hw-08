@@ -1,7 +1,6 @@
 @import './base/reset';
 
 @import './utils/vars';
-@import './utils/breakpoints';
 
 @import './components/container';
 @import './components/section';
@@ -11,6 +10,7 @@
 @import './components/text-area';
 @import './components/titles';
 @import './components/mixin';
+@import './components/desktop-nav';
 
 @import './header';
 @import './hero';
@@ -35,9 +35,14 @@
 @import './mobile.scss/_footer-mobile.scss';
 @import './mobile.scss/hero-mobile';
 @import './mobile.scss/modal-mobile';
+@import './mobile.scss/header-mobile';
 
 @import './tablet.scss/header-tablet';
 @import './tablet.scss/hero-tablet';
 @import './tablet.scss/clients-tablet';
 @import './tablet.scss/footer-tablet';
 @import './tablet.scss/features-tablet';
+@import './tablet.scss/team-tablet';
+
+@import './desktop/header-desktop';
+@import './desktop/footer-desktop';

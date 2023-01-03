@@ -16,7 +16,7 @@
     height: 600px;
 
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
        background-image: 
        linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url('../images/header-img-mobile.jpg');

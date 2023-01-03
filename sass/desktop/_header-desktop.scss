@@ -1,0 +1,16 @@
+@media screen and (min-width: 1200px) {
+    .header {
+        height: 80px;
+    }
+
+    .header__nav-contact {
+        justify-content: normal;
+        margin-left: 305px;
+    }
+
+    .desktop-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

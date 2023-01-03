@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:480px) and (max-width: 767px) {
 
     .features__list {
         display: flex;
@@ -9,10 +9,14 @@
 
     .features__item {
         width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        //  чому спрацьовує тільки маржин лефт
 
         &:not(:last-child) {
             margin-bottom: 30px;
-            margin-right: 0;
+            // margin-right: 0;
+            margin-right: auto;
         }
 
         &:last-child {

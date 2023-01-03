@@ -1,6 +1,6 @@
 // @media screen and (min-width: 480px) and (max-width: 1119px) 
 // чи тут треба макс відс????
-@media screen and (min-width: 480px) and (max-width: 1119px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
 
     .clients__title {
         margin-bottom: 30px;
@@ -16,7 +16,7 @@
     .clients__item {
 
         // width: 210px;
-        width: calc( (100% - 4 * 15px) / 2 );
+        width: calc( (100% - 2 * 15px) / 2 );
         margin-right: 15px;
         margin-bottom: 30px;
 
