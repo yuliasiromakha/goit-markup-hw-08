@@ -348,32 +348,19 @@ ul {
   }
 }
 
-.container.features li {
-  display: block;
-  justify-content: center;
-}
-
 .features {
   padding-bottom: 0;
 }
 
-.features__list {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 0;
-  align-items: baseline;
+@media screen and (max-width: 480) {
+  .feature__list {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
-
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features__item {
-  width: 270px;
-}
-
 .features__block {
   height: 120px;
   display: flex;
@@ -580,6 +567,7 @@ ul {
 .footer {
   background-color: var(--footer-bgc);
   padding: 60px 0;
+  height: 604px;
 }
 
 .part-one {
@@ -673,11 +661,16 @@ ul {
 
 .container.one {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__logo-container {
-  display: inline-block;
+  display: block;
+  align-items: flex-start;
 }
 
 .subscription__button {
@@ -755,6 +748,61 @@ ul {
   color: #F5F4FA;
 }
 
+@media screen and (max-width: 479px) {
+  .footer__logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer__join-area {
+    margin-left: 0;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .subscription__label {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscription__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscription__button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscription__input {
+    width: 250px;
+  }
+  .subscription__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__lower-logo {
+    margin-bottom: 0;
+  }
+  .team__list {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .portfolio-button {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bcg-color);
@@ -1282,7 +1330,7 @@ ul {
     flex-basis: calc(100% - 30рх);
   }
   .features__item {
-    width: 450px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1336,6 +1384,13 @@ ul {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item:nth-child(even) {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .clients__list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: calc(100% - 30рх);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1407,6 +1462,14 @@ ul {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+  }
+  .clients__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  .clients__item:nth-child(n+5) {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx) {
@@ -1587,6 +1650,9 @@ ul {
   .features__item {
     flex-basis: calc((100% - 30px) / 2);
   }
+  .features {
+    padding-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
@@ -1643,5 +1709,25 @@ ul {
   }
   .hero {
     background-size: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.features li {
+    display: block;
+    justify-content: center;
+  }
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    align-items: baseline;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features__item {
+    width: 270px;
   }
 }/*# sourceMappingURL=main.css.map */

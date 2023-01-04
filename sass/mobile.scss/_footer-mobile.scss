@@ -82,16 +82,25 @@
 
     }
 
+    .clients__item {
 
+        // width: 210px;
+        width: calc( (100% - 2 * 15px) / 2 );
+        margin-right: 15px;
+        margin-bottom: 30px;
+
+        // &:nth-child(even) {
+        //     margin-right: 0;
+        // }
+
+        &:nth-child(n + 5) {
+            margin-bottom: 0;
+        }
+    
+    }
 }
 
 
-
-    // .subscription__form {
-    //     // display: block;
-    //     margin: 0;
-    //     padding: 0;
-    //     width: auto;
-    //     align-items: center;
-    //     justify-content: center;
-    // }
+@media screen and (max-width) {
+    
+}

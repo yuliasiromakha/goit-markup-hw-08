@@ -36,3 +36,16 @@
         margin-right: 0;
     }
 }
+
+
+@media screen and (max-width: 479px) {
+    .clients__list {
+        flex-wrap: wrap;
+        flex-direction: column;
+        // flex-basis: calc(100% - 30рх);
+    }
+
+    .clients__item {
+        width: calc((100%- 2 * 15px) /1);
+    }
+}

@@ -4,6 +4,7 @@
 .footer {
     background-color: var(--footer-bgc);
     padding: 60px 0;
+    height: 604px;
 }
 
 .part-one {
@@ -113,11 +114,17 @@ letter-spacing: 0.03em;
 
 .container.one {
     display: flex;
-align-items: baseline;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
 }
 
 .footer__logo-container{
-    display: inline-block;
+    display: block;
+    align-items: flex-start;
+    // margin-bottom: 60px;
 }
 
 
@@ -186,7 +193,72 @@ padding-left: 16px;
 
 color: #F5F4FA;
 }
-    
-// .mail-icon {
-// fill: #212121;
-// }
+
+
+@media screen and (max-width: 479px) {
+    .footer__logo-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 60px;
+    }
+
+    .footer__join-area {
+        margin-left: 0;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .subscription__label {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscription__block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscription__button {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .subscription__input {
+        width: 250px;
+    }
+
+    .subscription__form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__lower-logo {
+        margin-bottom: 0;
+    }
+
+
+    .team__list {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+   
+}
