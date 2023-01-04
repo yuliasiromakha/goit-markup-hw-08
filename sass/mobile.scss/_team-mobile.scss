@@ -11,6 +11,7 @@
     .team__list {
         display: block;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .team__item {
@@ -24,4 +25,15 @@
     }
 
 
+}
+
+@media screen and (max-width: 479px) {
+
+    .team__list {
+        justify-content: center;
+    }
+
+    .team__item:not(:last-child) {
+        margin-right: 0;
+    }
 }

@@ -39,13 +39,29 @@
 
 
 @media screen and (max-width: 479px) {
+
     .clients__list {
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
         // flex-basis: calc(100% - 30рх);
+        justify-content: center;
+
+        gap: 30px;
     }
 
     .clients__item {
-        width: calc((100%- 2 * 15px) /1);
+        // width: calc((100% - 0 * 0px) /2);
+        margin-right: 0;
     }
+
+    .clients__item:last-child {
+        margin-bottom: 0;
+    }
+
+   .clients__item:not(:last-child) {
+    margin-right: 0;
+   }
 }
