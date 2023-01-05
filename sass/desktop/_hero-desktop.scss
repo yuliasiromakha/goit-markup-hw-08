@@ -1,9 +1,16 @@
 @media screen and (min-width: 1200px) {
-    .hero__title {
+    .hero{
         padding-top: 200px;
     }
 
     .hero {
         background-size: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
